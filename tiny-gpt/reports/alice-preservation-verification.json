@@ -1,0 +1,9 @@
+{
+  "original_artifacts_unchanged": 31,
+  "exact_vocabulary_and_architecture_preserved": true,
+  "original_step": 1000,
+  "updated_step": 3000,
+  "resume_test_step": 3020,
+  "optimizer_steps_verified": true,
+  "cpu_and_cuda_rng_saved": true
+}

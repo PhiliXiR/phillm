@@ -1,0 +1,107 @@
+{
+  "original": {
+    "path": "runs/alice-1000/latest.pt",
+    "step": 1000,
+    "sha256": "cce2911bae9c6461cb6e3cf22385b88b07dcd3ed11faf7d4ed4eb6034b9b0d7c"
+  },
+  "updated": {
+    "path": "runs/alice-time-machine-3000/latest.pt",
+    "step": 3000,
+    "sha256": "10d71a1a97da806c7aa3bad039883b1466d7d7a82b6274b8a0001f35f2b854b5"
+  },
+  "manifest_sha256": "8b16649d4cb724a9faa0366f901f0b923042f52fd1c890b60ea9cb3dbe664ef1",
+  "validation": {
+    "original": {
+      "alice": {
+        "loss": 1.8484834590486838,
+        "targets": 14459
+      },
+      "time_machine": {
+        "loss": 2.118448573440779,
+        "targets": 17973
+      }
+    },
+    "updated": {
+      "alice": {
+        "loss": 1.4871403274055306,
+        "targets": 14459
+      },
+      "time_machine": {
+        "loss": 1.609317982123185,
+        "targets": 17973
+      }
+    }
+  },
+  "sampling": {
+    "temperature": 0.8,
+    "top_k": 20,
+    "tokens": 200,
+    "prompts": [
+      "\n",
+      "Alice ",
+      "The Time Traveller "
+    ],
+    "seeds": [
+      42,
+      1337,
+      2026
+    ],
+    "device": "cuda"
+  },
+  "examples": [
+    {
+      "prompt": "\n",
+      "seed": 42,
+      "original": "\n\n\n\n\n                                             w                    s                                                          *    \n* d                                        f           *s    d   ",
+      "updated": "\nI’m heardles the souch of the rooth man all to cowder, it was the\nholdsehons sat of maching? Alice found earned the that in the edgest\nwoder, and said “Come across, if the blows.”\n\n\n“Soup-eses as tea "
+    },
+    {
+      "prompt": "\n",
+      "seed": 1337,
+      "original": "\n\n\nbit suche shes ind a has lotime of it it a a groct-thing a bast one, I littleme\ngor. you kelow it, you do know it you do kid you ory kbee wamy\ncrint it he seache said, ait fothers they went to the l",
+      "updated": "\nyou the Queen such stange, and\nsomething at talking it in a crast of the light monzer. ‘In appeared,\nin was a grovour vive it a knook partes. And rink the Morlacte said\nhairs how size: “No old, at it "
+    },
+    {
+      "prompt": "\n",
+      "seed": 2026,
+      "original": "\n     she couldn ton the roouse a little thats sionace all imome that\nthers begrentinglinf, int formed to look cantere, sthis same she\ndownd and on ofe they, and the she swintent shume, she dit moom no",
+      "updated": "\n\n“Terse to it,” the March Mock Turtle tursively, and she was a planget the\nblackness litf, and for the villing with a clack, and the story.\n\nFor sight to close the sun!”\n\n“He near distured in or of th"
+    },
+    {
+      "prompt": "Alice ",
+      "seed": 42,
+      "original": "Alice bote has to it the couse.\n\nThe Queeme gay,” so that she the Mock Moulrse Alice. “I mouself to mave mine\nit, a I din that ine, as do loy yourn’t that cone was clo it if thay\nlittere a sallle thought th",
+      "updated": "Alice both had thought, and he think said the little of days, and the\ntalkless another the condes? Alice found earn aruing had in a sort old\nsomething. “Grye, you know it is torn had after as she sloperder "
+    },
+    {
+      "prompt": "Alice ",
+      "seed": 1337,
+      "original": "Alice you the was she wits a has lor\nsome the gat tas itchirts in that do fit pliat smong raping and the\na sseen it. And you the kit\nshomorile wen a that! I knee to a yetsaid, tit forme in to rouply\nthey he",
+      "updated": "Alice or the general sency and but time of the more of the\nthings heartous for lifted this appearach.\n\n“Walls was argring you down the story, but I made it was he same engager to\ntell moving arms the more l"
+    },
+    {
+      "prompt": "Alice ",
+      "seed": 2026,
+      "original": "Alice the ras, and said not wor to a a little thats sio\nas shing mouters ont the gliked bbole farnct hous do on the cane to\nentoing at thems of the of she know chang to his the hat ne shume,\nshe dit moom no",
+      "updated": "Alice the right only my now words. The simply, save signacce, and Alice a\nhorrroally, with litfericty of the only that the went is same shouter\ndown and the conder smolet sen, with I do never that tormouse "
+    },
+    {
+      "prompt": "The Time Traveller ",
+      "seed": 42,
+      "original": "The Time Traveller it, and bed it little wey tinke and of anly as a\nwous hit, “I lit helrse to mak allkice littlats you to heave a\ndince a aind wis if loy odldn’t that conmed tamlokit if thay looke\nforte tase thought th",
+      "updated": "The Time Traveller box, was that glass camey time sat madd, and\nthat dayly the meant hillsess.\n\n“Have more lessonation,” said the ruins had in a voice, “He descovers and\nno we acto it is than horied the stare of the rig"
+    },
+    {
+      "prompt": "The Time Traveller ",
+      "seed": 1337,
+      "original": "The Time Traveller one the Quees one, you knoty time of greave tas ince-thi\nsaid a to she welll of thite poon a had it, “s was that in you dof\nthatkers,” said Alice ritt the Marcache said had the wening in\ntho thatt gai",
+      "updated": "The Time Traveller as it such fourst, you know. I\nsay, I did the world hap him heard only delights on the tun apped it,\nas was all brough the Morlocks riseblet. And rink the Morlocks said\nhairs how size: “Four you me ha"
+    },
+    {
+      "prompt": "The Time Traveller ",
+      "seed": 2026,
+      "original": "The Time Traveller they she come a ling to row.\n\n“No it see says __onacce, which fils on by sable, whing thalking formed\ntonly that the went it sampe ons orme grouon ofe tonce, “It lonst!”\n\nyou no she like was to do bet",
+      "updated": "The Time Traveller have shouck once.\n\n“The roof,” said Alice shoutly as she was a planget the blackness diff,\nand for the villing with and this same some or the poor of a parm,\nI the surpred winkling my usup own muth ha"
+    }
+  ]
+}

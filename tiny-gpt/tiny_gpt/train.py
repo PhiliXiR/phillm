@@ -32,12 +32,14 @@ def evaluate(model, splits, settings, device):
     return result
 
 
-def save_checkpoint(path, model, optimizer, tokenizer, settings, step, digest, history):
+def save_checkpoint(path, model, optimizer, tokenizer, settings, step, digest, history, mixture=None):
     state = {"model": model.state_dict(), "model_config": asdict(model.config),
              "optimizer": optimizer.state_dict(), "tokenizer": tokenizer.characters,
              "step": step, "training_config": settings, "data_sha256": digest,
              "history": history, "cpu_rng": torch.get_rng_state(),
              "cuda_rng": torch.cuda.get_rng_state_all() if next(model.parameters()).is_cuda else []}
+    if mixture is not None:
+        state["mixture"] = mixture
     temporary = path.with_suffix(".tmp")
     torch.save(state, temporary)
     temporary.replace(path)

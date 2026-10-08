@@ -79,3 +79,7 @@ Corpus: Lewis Carroll, *Alice's Adventures in Wonderland* (1865), [Project Guten
 Teaching reference: Andrej Karpathy's [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html), especially the language modeling/GPT lessons. The implementation here is written independently; no reference code or pretrained weights were copied. Start by inspecting the shifted targets, then the mask, then the loss/backward/update sequence.
 
 Installation references: [PyTorch Start Locally](https://pytorch.org/get-started/locally/) and [NVIDIA CUDA on WSL guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html). The PyTorch page's rendered selector showed older release text during inspection; the official cu128 package index supplied the actual installed 2.11.0 build. Only `torch` is a direct dependency; CUDA libraries installed by its wheel are managed inside the virtual environment.
+
+## Continue with The Time Machine
+
+See [the two-book preparation, continuation commands, and measured results](reports/time-machine.md). The original Alice dataset/checkpoint and exact 75 character IDs are preserved. New training uses equal numbers of per-book windows and evaluates each book separately.
