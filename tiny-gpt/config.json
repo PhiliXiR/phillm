@@ -1,0 +1,14 @@
+{
+  "context_length": 128,
+  "embedding_width": 128,
+  "heads": 4,
+  "layers": 4,
+  "batch_size": 16,
+  "steps": 1000,
+  "learning_rate": 0.0003,
+  "eval_interval": 100,
+  "eval_batches": 20,
+  "seed": 1337,
+  "threads": 4,
+  "device": "auto"
+}
